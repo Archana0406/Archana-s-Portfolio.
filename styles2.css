@@ -134,7 +134,7 @@ header {
 .neon-text {
     font-size: 3rem;
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
     background-size: 400% 400%;
     animation: animatetext 4s ease-in-out infinite;
     background-image: linear-gradient(to right bottom, #0e267c, #0050a4, rgb(124, 0, 128), #0078c4, rgb(124, 0, 128), #dd0090, #00caf2, #0e267c, #00fede, #ba106a, #69016d, #ebdc53, #19ebd3);
@@ -199,9 +199,9 @@ header {
 }
 
 .profile-img {
-    flex: 1 1 300px; /* Flexible width, minimum width, maximum width */
-    margin-right: 20px; /* Adjust spacing between image and text */
-    position: relative; /* Ensure the container can hold absolutely positioned elements */
+    flex: 1 1 300px; 
+    margin-right: 20px; 
+    position: relative; 
     display: inline-block;
     animation: moveVertically 5s infinite;
 }
@@ -217,7 +217,7 @@ header {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-50px); /* Adjust the value as needed */
+        transform: translateY(-50px); 
     }
     100% {
         transform: translateY(0);
